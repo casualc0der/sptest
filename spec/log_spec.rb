@@ -12,6 +12,7 @@ class Log
     raise "Please supply file in correct format" unless open.split("\n").all? {|line| format_checker(line)}
     open.split("\n")
   end
+  private
   def format_checker(line)
     /\/.+ (\d{3}\.){3}\d{3}/.match(line)
   end
