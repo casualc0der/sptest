@@ -9,10 +9,13 @@ class Log
     File.read(@raw_data)
   end
   def format
-    raise "Please supply file in correct format" unless open.split("\n").all? {|line| format_checker(line)}
+    raise "Please supply file in correct format" unless validation?
     open.split("\n")
   end
   private
+  def validation?
+    open.split("\n").all? {|line| format_checker(line)}
+  end
   def format_checker(line)
     /\/.+ (\d{3}\.){3}\d{3}/.match(line)
   end

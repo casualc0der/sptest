@@ -5,7 +5,10 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 Log	spec/log_spec.rb	/^class Log$/;"	c
+LogLine	spec/logline_spec.rb	/^class LogLine$/;"	c
+add_ip	spec/logline_spec.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
 format	spec/log_spec.rb	/^  def format$/;"	f	class:Log
 format_checker	spec/log_spec.rb	/^  def format_checker(line)$/;"	f	class:Log
 initialize	spec/log_spec.rb	/^  def initialize(raw_data)$/;"	f	class:Log
+initialize	spec/logline_spec.rb	/^  def initialize(path)$/;"	f	class:LogLine
 open	spec/log_spec.rb	/^  def open$/;"	f	class:Log
