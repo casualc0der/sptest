@@ -54,7 +54,4 @@ class Log
     data << logger
   end
 
-  def existing_logline(logline)
-    log_finder(logline)
-  end
 end
