@@ -8,6 +8,8 @@ Log	lib/log.rb	/^class Log$/;"	c
 LogLine	lib/logline.rb	/^class LogLine$/;"	c
 Parser	lib/parser.rb	/^class Parser$/;"	c
 add_ip	lib/logline.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
+add_new_logline	lib/log.rb	/^  def add_new_logline(logline)$/;"	f	class:Log
+existing_logline	lib/log.rb	/^  def existing_logline(logline)$/;"	f	class:Log
 format	lib/log.rb	/^  def format$/;"	f	class:Log
 format_checker	lib/log.rb	/^  def format_checker(line)$/;"	f	class:Log
 format_lines	lib/log.rb	/^  def format_lines(line)$/;"	f	class:Log
@@ -17,6 +19,7 @@ initialize	lib/logline.rb	/^  def initialize(path)$/;"	f	class:LogLine
 initialize	lib/parser.rb	/^  def initialize(opts)$/;"	f	class:Parser
 line_total	lib/parser.rb	/^  def line_total(line)$/;"	f	class:Parser
 line_unique	lib/parser.rb	/^  def line_unique(line)$/;"	f	class:Parser
+log_finder	lib/log.rb	/^  def log_finder(logline)$/;"	f	class:Log
 open	lib/log.rb	/^  def open$/;"	f	class:Log
 option	lib/parser.rb	/^  def option(opts)$/;"	f	class:Parser
 report	lib/parser.rb	/^  def report(log)$/;"	f	class:Parser

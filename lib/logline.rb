@@ -18,5 +18,4 @@ class LogLine
   def report_unique_visits
     @ip_addresses.uniq.length
   end
-
 end
