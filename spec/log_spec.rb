@@ -25,6 +25,7 @@ class Log
       x.add_ip(logline[1])
     end
     end
+    @data
   end
   private
   def validation?

@@ -9,7 +9,11 @@ LogLine	spec/logline_spec.rb	/^class LogLine$/;"	c
 add_ip	spec/logline_spec.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
 format	spec/log_spec.rb	/^  def format$/;"	f	class:Log
 format_checker	spec/log_spec.rb	/^  def format_checker(line)$/;"	f	class:Log
+format_lines	spec/log_spec.rb	/^  def format_lines(line)$/;"	f	class:Log
+generate	spec/log_spec.rb	/^  def generate$/;"	f	class:Log
 initialize	spec/log_spec.rb	/^  def initialize(raw_data)$/;"	f	class:Log
 initialize	spec/logline_spec.rb	/^  def initialize(path)$/;"	f	class:LogLine
 open	spec/log_spec.rb	/^  def open$/;"	f	class:Log
+report_total_visits	spec/logline_spec.rb	/^  def report_total_visits$/;"	f	class:LogLine
+report_unique_visits	spec/logline_spec.rb	/^  def report_unique_visits$/;"	f	class:LogLine
 validation?	spec/log_spec.rb	/^  def validation?$/;"	f	class:Log
