@@ -4,26 +4,26 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Log	spec/log_spec.rb	/^class Log$/;"	c
-LogLine	spec/logline_spec.rb	/^class LogLine$/;"	c
-Parser	spec/parser_spec.rb	/^class Parser$/;"	c
-add_ip	spec/logline_spec.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
-format	spec/log_spec.rb	/^  def format$/;"	f	class:Log
-format_checker	spec/log_spec.rb	/^  def format_checker(line)$/;"	f	class:Log
-format_lines	spec/log_spec.rb	/^  def format_lines(line)$/;"	f	class:Log
-generate	spec/log_spec.rb	/^  def generate$/;"	f	class:Log
-initialize	spec/log_spec.rb	/^  def initialize(raw_data)$/;"	f	class:Log
-initialize	spec/logline_spec.rb	/^  def initialize(path)$/;"	f	class:LogLine
-initialize	spec/parser_spec.rb	/^  def initialize(opts)$/;"	f	class:Parser
-line_total	spec/parser_spec.rb	/^  def line_total(line)$/;"	f	class:Parser
-line_unique	spec/parser_spec.rb	/^  def line_unique(line)$/;"	f	class:Parser
-open	spec/log_spec.rb	/^  def open$/;"	f	class:Log
-option	spec/parser_spec.rb	/^  def option(opts)$/;"	f	class:Parser
-report	spec/parser_spec.rb	/^  def report(log)$/;"	f	class:Parser
-report_total	spec/parser_spec.rb	/^  def report_total(log)$/;"	f	class:Parser
-report_total_visits	spec/logline_spec.rb	/^  def report_total_visits$/;"	f	class:LogLine
-report_unique	spec/parser_spec.rb	/^  def report_unique(log)$/;"	f	class:Parser
-report_unique_visits	spec/logline_spec.rb	/^  def report_unique_visits$/;"	f	class:LogLine
-top_line_total	spec/parser_spec.rb	/^  def top_line_total$/;"	f	class:Parser
-top_line_unique	spec/parser_spec.rb	/^  def top_line_unique$/;"	f	class:Parser
-validation?	spec/log_spec.rb	/^  def validation?$/;"	f	class:Log
+Log	lib/log.rb	/^class Log$/;"	c
+LogLine	lib/logline.rb	/^class LogLine$/;"	c
+Parser	lib/parser.rb	/^class Parser$/;"	c
+add_ip	lib/logline.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
+format	lib/log.rb	/^  def format$/;"	f	class:Log
+format_checker	lib/log.rb	/^  def format_checker(line)$/;"	f	class:Log
+format_lines	lib/log.rb	/^  def format_lines(line)$/;"	f	class:Log
+generate	lib/log.rb	/^  def generate$/;"	f	class:Log
+initialize	lib/log.rb	/^  def initialize(raw_data)$/;"	f	class:Log
+initialize	lib/logline.rb	/^  def initialize(path)$/;"	f	class:LogLine
+initialize	lib/parser.rb	/^  def initialize(opts)$/;"	f	class:Parser
+line_total	lib/parser.rb	/^  def line_total(line)$/;"	f	class:Parser
+line_unique	lib/parser.rb	/^  def line_unique(line)$/;"	f	class:Parser
+open	lib/log.rb	/^  def open$/;"	f	class:Log
+option	lib/parser.rb	/^  def option(opts)$/;"	f	class:Parser
+report	lib/parser.rb	/^  def report(log)$/;"	f	class:Parser
+report_total	lib/parser.rb	/^  def report_total(log)$/;"	f	class:Parser
+report_total_visits	lib/logline.rb	/^  def report_total_visits$/;"	f	class:LogLine
+report_unique	lib/parser.rb	/^  def report_unique(log)$/;"	f	class:Parser
+report_unique_visits	lib/logline.rb	/^  def report_unique_visits$/;"	f	class:LogLine
+top_line_total	lib/parser.rb	/^  def top_line_total$/;"	f	class:Parser
+top_line_unique	lib/parser.rb	/^  def top_line_unique$/;"	f	class:Parser
+validation?	lib/log.rb	/^  def validation?$/;"	f	class:Log

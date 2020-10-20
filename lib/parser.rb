@@ -26,10 +26,10 @@ class Parser
   end
 
   def top_line_total
-    "PATH#{' ' * 7}IP\n"
+    "PATH#{' ' * 25}VISITS\n"
   end
   def line_total(line)
-    "#{line.path}#{' ' * (10-line.path.length) } #{line.report_total_visits}"
+    "#{line.path}#{' ' * (30-line.path.length) } #{line.report_total_visits}"
   end
   def report_unique(log)
     report = ""
@@ -41,9 +41,9 @@ class Parser
     report
   end
   def top_line_unique
-    "PATH#{' ' * 7}IP\n"
+    "PATH#{' ' * 23}UNIQUE VISITS\n"
   end
   def line_unique(line)
-    "#{line.path}#{' ' * (10-line.path.length) } #{line.report_unique_visits}"
+    "#{line.path}#{' ' * (30-line.path.length) } #{line.report_unique_visits}"
   end
 end
