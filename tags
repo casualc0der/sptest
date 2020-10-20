@@ -12,3 +12,4 @@ format_checker	spec/log_spec.rb	/^  def format_checker(line)$/;"	f	class:Log
 initialize	spec/log_spec.rb	/^  def initialize(raw_data)$/;"	f	class:Log
 initialize	spec/logline_spec.rb	/^  def initialize(path)$/;"	f	class:LogLine
 open	spec/log_spec.rb	/^  def open$/;"	f	class:Log
+validation?	spec/log_spec.rb	/^  def validation?$/;"	f	class:Log
