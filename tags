@@ -10,7 +10,6 @@ Logger	lib/logger.rb	/^class Logger$/;"	c
 Parser	lib/parser.rb	/^class Parser$/;"	c
 add_ip	lib/logline.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
 add_new_logline	lib/log.rb	/^  def add_new_logline(logline)$/;"	f	class:Log
-existing_logline	lib/log.rb	/^  def existing_logline(logline)$/;"	f	class:Log
 format	lib/log.rb	/^  def format$/;"	f	class:Log
 format_checker	lib/log.rb	/^  def format_checker(line)$/;"	f	class:Log
 format_lines	lib/log.rb	/^  def format_lines(line)$/;"	f	class:Log
