@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 Log	lib/log.rb	/^class Log$/;"	c
 LogLine	lib/logline.rb	/^class LogLine$/;"	c
+Logger	lib/logger.rb	/^class Logger$/;"	c
 Parser	lib/parser.rb	/^class Parser$/;"	c
 add_ip	lib/logline.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
 add_new_logline	lib/log.rb	/^  def add_new_logline(logline)$/;"	f	class:Log
@@ -27,6 +28,7 @@ report_total	lib/parser.rb	/^  def report_total(log)$/;"	f	class:Parser
 report_total_visits	lib/logline.rb	/^  def report_total_visits$/;"	f	class:LogLine
 report_unique	lib/parser.rb	/^  def report_unique(log)$/;"	f	class:Parser
 report_unique_visits	lib/logline.rb	/^  def report_unique_visits$/;"	f	class:LogLine
+run	lib/logger.rb	/^  def self.run$/;"	F	class:Logger
 top_line_total	lib/parser.rb	/^  def top_line_total$/;"	f	class:Parser
 top_line_unique	lib/parser.rb	/^  def top_line_unique$/;"	f	class:Parser
 validation?	lib/log.rb	/^  def validation?$/;"	f	class:Log
