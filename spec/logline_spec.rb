@@ -30,6 +30,23 @@ describe LogLine do
       expect(logline.report_total_visits).to eq(5)
     end
   end
+
+  # Not sure this was the correct implementation -> this counts unique ip addresses per path
+  # I guess we should report unique visits i.e where a path has been visited by a specific
+  # ip only once...
+  # describe '#report_unique_visits' do
+  #   it 'tallies unique visits' do
+  #     5.times do
+  #       logline.add_ip('333.333.333.333')
+  #     end
+  #     2.times do
+  #       logline.add_ip('123.456.123.123')
+  #     end
+  #     expect(logline.report_unique_visits).to eq(2)
+  #   end
+  # end
+
+  # updated implementation
   describe '#report_unique_visits' do
     it 'tallies unique visits' do
       5.times do
@@ -38,8 +55,8 @@ describe LogLine do
       2.times do
         logline.add_ip('123.456.123.123')
       end
-      expect(logline.report_unique_visits).to eq(2)
+      logline.add_ip("111.111.111.111")
+      expect(logline.report_unique_visits).to eq(1)
     end
   end
-
-end
+  end

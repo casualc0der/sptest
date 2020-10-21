@@ -60,7 +60,7 @@ describe Parser do
       file.flush
       log = Log.new(file)
       parser = Parser.new(opts)
-      expected =  "PATH                       UNIQUE VISITS\n/about                         3\n/home                          1\n"
+      expected =  "PATH                       UNIQUE VISITS\n/about                         3\n/home                          0\n"
       expect(parser.report(log.generate)).to eq(expected)
     end
   end
