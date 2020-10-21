@@ -10,6 +10,7 @@
 - Run ```ruby bin/logger path/to/file``` to parse the input
 - I have uploaded the sample file for ease of use, so you could just run
     ```ruby bin/logger webserver.log``` :)
+- Specify if you require total (t) visits to each address, or a count of unique visits (u)
 - Tests are located in the spec directory (RSpec)
 
 ## Notes 
