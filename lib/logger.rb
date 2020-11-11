@@ -9,8 +9,10 @@ class Logger
       puts 'Return total (t) or unique (u) visits? please enter t or u:'
       log = Log.new(ARGV[0])
       options = $stdin.gets.chomp
-      parser = Parser.new(options)
-      break unless parser.choice == false
+      log.option(options)
+      parser = Parser.new
+
+      break unless log.choice == false
     end
 
     puts parser.report(log.generate)

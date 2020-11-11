@@ -1,12 +1,21 @@
 # frozen_string_literal: true
 
-require_relative 'logline'
+require_relative 'logline_factory'
 
 class Log
-  attr_reader :data
+  attr_reader :data, :options, :choice
+
   def initialize(raw_data)
     @raw_data = raw_data
     @data = []
+    @choice = false
+  end
+
+  def option(opts)
+    total = %w[t T]
+    unique = %w[u U]
+    @choice = :total if total.include?(opts)
+    @choice = :unique if unique.include?(opts)
   end
 
   def open
@@ -49,9 +58,8 @@ class Log
   end
 
   def add_new_logline(logline)
-    logger = LogLine.new(logline[0])
+    logger = LogLineFactory.create_logline(@choice, logline[0])
     logger.add_ip(logline[1])
     data << logger
   end
-
 end

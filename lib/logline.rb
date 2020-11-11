@@ -11,11 +11,7 @@ class LogLine
     @ip_addresses << ip
   end
 
-  def report_total_visits
-    @ip_addresses.length
+  def report
   end
 
-  def report_unique_visits
-    @ip_addresses.select { |address| @ip_addresses.count(address) < 2 }.length
-  end
 end
