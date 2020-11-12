@@ -14,6 +14,7 @@ UniqueLogline	lib/unique_logline.rb	/^class UniqueLogline < LogLine$/;"	c
 add_ip	lib/logline.rb	/^  def add_ip(ip)$/;"	f	class:LogLine
 add_new_logline	lib/log.rb	/^  def add_new_logline(logline)$/;"	f	class:Log
 create_logline	lib/logline_factory.rb	/^  def self.create_logline(choice, path)$/;"	F	class:LogLineFactory
+extract_logline_data	lib/parser.rb	/^  def extract_logline_data(logline)$/;"	f	class:Parser
 format	lib/log.rb	/^  def format$/;"	f	class:Log
 format_checker	lib/log.rb	/^  def format_checker(line)$/;"	f	class:Log
 format_lines	lib/log.rb	/^  def format_lines(line)$/;"	f	class:Log
@@ -22,12 +23,11 @@ initialize	lib/log.rb	/^  def initialize(raw_data)$/;"	f	class:Log
 initialize	lib/logline.rb	/^  def initialize(path)$/;"	f	class:LogLine
 initialize	lib/total_logline.rb	/^  def initialize(path)$/;"	f	class:TotalLogline
 initialize	lib/unique_logline.rb	/^  def initialize(path)$/;"	f	class:UniqueLogline
-line	lib/parser.rb	/^  def line(logline)$/;"	f	class:Parser
 log_finder	lib/log.rb	/^  def log_finder(logline)$/;"	f	class:Log
 open	lib/log.rb	/^  def open$/;"	f	class:Log
 option	lib/log.rb	/^  def option(opts)$/;"	f	class:Log
+output	lib/parser.rb	/^  def output(log)$/;"	f	class:Parser
 report	lib/logline.rb	/^  def report$/;"	f	class:LogLine
-report	lib/parser.rb	/^  def report(log)$/;"	f	class:Parser
 report	lib/total_logline.rb	/^  def report$/;"	f	class:TotalLogline
 report	lib/unique_logline.rb	/^  def report$/;"	f	class:UniqueLogline
 run	lib/logger.rb	/^  def self.run$/;"	F	class:Logger

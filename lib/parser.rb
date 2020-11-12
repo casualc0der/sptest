@@ -14,7 +14,7 @@ class Parser
 
   private
   def top_line
-    "PATH#{' ' * 25}VISITS\n"
+    "PATH#{' ' * 25}TOTAL\n"
   end
 
   def extract_logline_data(logline)
