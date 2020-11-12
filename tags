@@ -22,7 +22,7 @@ initialize	lib/log.rb	/^  def initialize(raw_data)$/;"	f	class:Log
 initialize	lib/logline.rb	/^  def initialize(path)$/;"	f	class:LogLine
 initialize	lib/total_logline.rb	/^  def initialize(path)$/;"	f	class:TotalLogline
 initialize	lib/unique_logline.rb	/^  def initialize(path)$/;"	f	class:UniqueLogline
-line	lib/parser.rb	/^  def line(line)$/;"	f	class:Parser
+line	lib/parser.rb	/^  def line(logline)$/;"	f	class:Parser
 log_finder	lib/log.rb	/^  def log_finder(logline)$/;"	f	class:Log
 open	lib/log.rb	/^  def open$/;"	f	class:Log
 option	lib/log.rb	/^  def option(opts)$/;"	f	class:Log

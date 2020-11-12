@@ -46,7 +46,7 @@ class Log
   end
 
   def format_checker(line)
-    %r{/.+ (\d{3}\.){3}\d{3}}.match(line)
+    /.+ (\d{3}\.){3}\d{3}$/.match?(line)
   end
 
   def format_lines(line)
