@@ -2,12 +2,12 @@
 
 class Parser
 
-  def report(log)
+  def output(log)
     report = ''.dup
     report << top_line
     log.sort! { |a, b| b.report <=> a.report }
     log.each do |logline|
-      report << line(logline) << "\n"
+      report << extract_logline_data(logline) << "\n"
     end
     report
   end
@@ -17,7 +17,7 @@ class Parser
     "PATH#{' ' * 25}VISITS\n"
   end
 
-  def line(logline)
+  def extract_logline_data(logline)
     "#{logline.path}#{' ' * (30-logline.path.length) } #{logline.report}"
   end
 

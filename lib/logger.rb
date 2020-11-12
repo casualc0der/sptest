@@ -12,6 +12,6 @@ class Logger
       parser = Parser.new
       break unless log.choice == false
     end
-    puts parser.report(log.generate)
+    puts parser.output(log.generate)
   end
 end

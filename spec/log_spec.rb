@@ -14,6 +14,35 @@ describe Log do
     expect { log.open }.to raise_exception(RuntimeError, "Please supply valid file")
   end
   end
+  describe "#options" do
+    let(:log) {Log.new(file)}
+    it "saves choice of total (t)" do
+      log.option('t')
+
+      expect(log.choice).to eq(:total)
+    end
+    it "saves choice of total (T)" do
+      log.option('T')
+
+      expect(log.choice).to eq(:total)
+    end
+    it "saves choice of unique (u)" do
+      log.option('u')
+
+      expect(log.choice).to eq(:unique)
+    end
+    it "saves choice of unique (U)" do
+      log.option('U')
+
+      expect(log.choice).to eq(:unique)
+    end
+    it "returns false if wrong selection" do
+      ("a"..."s").each do |opts|
+        log.option(opts)
+        expect(log.choice).to eq(false)
+      end
+    end
+  end
   describe "#format" do
     it "returns data split by newline and space" do
       file << <<~LOG
@@ -42,8 +71,9 @@ describe Log do
       LOG
       file.flush
       log = Log.new(file)
+      log.option('t')
       log.generate
-      expect(log.data.first).to be_instance_of(LogLine)
+      expect(log.data.first).to respond_to(:report)
       expect(log.data.first.path).to eq("/about")
       expect(log.data.first.ip_addresses).to eq (["555.555.555.555"])
     end
